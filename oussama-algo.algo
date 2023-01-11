@@ -1,0 +1,61 @@
+
+// NUMBER OF CARACTER
+
+ALGORITHM nb-caracter
+
+VAR
+    str : string :="the first algo";
+    count : INTEGER : = 0;
+
+BEGIN
+     FOR (int i=0; i< str.length(); i++) DO
+             IF (str.charAt[i] !=' '  ) THEN
+        count++;                                                          
+           END_IF
+        END_FOR
+             write(count);
+
+END
+
+// NUMBER OF WORDS
+ALGORITHM nb-WORDS
+
+VAR
+    str : string :="the first algo";
+    count : INTEGER : = 0;
+
+BEGIN
+     FOR (int i=0; i< str.length(); i++) DO
+             IF (str.charAt[i] !=' '  ) THEN
+        count++;                                                          
+           END_IF
+        END_FOR
+             write(count);
+
+END
+
+
+def analySe_sentence:
+    
+    word_count = 0
+    vowel_count = 0
+
+    
+    for char in sentence:
+        
+        length += 1
+
+        if char == " " or char == ".":
+            
+            word_count += 1
+        
+        if char in "HELLOWORLD":
+
+            vowel_count += 1
+
+    if sentence[-1] == ".":
+        length -= 1
+
+    return length, word_count, vowel_count
+
+END;
